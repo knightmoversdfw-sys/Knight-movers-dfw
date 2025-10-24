@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knight Movers DFW — Make your next move your best move</title>
+  <meta name="description" content="Knight Movers DFW offers reliable, affordable moving services across Dallas–Fort Worth.">
+  <link rel="icon" href="assets/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const form=document.getElementById('quoteForm');
+if(form){form.addEventListener('submit',e=>{e.preventDefault();const data=new FormData(form);let body='';for(const[k,v]of data.entries()){body+=`${k}: ${v}\n`;}
+window.location.href=`mailto:knightmoversdfw@gmail.com?subject=Quote Request&body=${encodeURIComponent(body)}`;});}
+
+</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#home">
+        <img class="logo" src="assets/logo.png" alt="Knight Movers DFW logo">
+        <span>Knight Movers DFW</span><span class="badge-es">Hablamos español</span>
+      </a>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        
+        
+        <a href="#quote">Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Make Your Next Move Your Best Move</h1>
+        <p>Professional movers serving the Dallas–Fort Worth area — reliable, efficient, and affordable.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#quote">Get a Free Quote</a>
+          <a class="btn btn-ghost" href="tel:+1XXXXXXXXXX">Call Now</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/logo.png" alt="Knight Movers illustration">
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <div class="card"><h3>Residential Moves</h3><p>Apartments, houses, and condos. We handle every move with care.</p></div>
+        <div class="card"><h3>Office Moves</h3><p>Small business relocations made easy — desks, tech, and all.</p></div><div class="card"><h3>Appliance Delivery & Installation</h3><p>We can pick up, deliver, and install appliances so they’re ready to use when we leave.</p></div>
+        
+<div class="card"><h3>Residential Moving</h3><p>Apartments, homes, condos — careful wrapping, stair carries, elevators.</p></div>
+<div class="card"><h3>Commercial Moving</h3><p>Small offices & retail spaces — desks, tech, filing, after-hours options.</p></div>
+<div class="card"><h3>Packing & Supplies</h3><p>Full or partial packing, boxes, tape, padding, shrink wrap — we bring it all.</p></div>
+<div class="card"><h3>Specialty Moving</h3><p>Safes, treadmills, pool tables, large TVs, delicate items handled with care.</p></div>
+<div class="card"><h3>Move‑Out / Move‑In Cleaning</h3><p>Add-on deep clean so your place is ready for keys or deposit return.</p></div>
+<div class="card"><h3>Furniture Installation</h3><p>Assembly and placement so rooms are ready when we leave.</p></div>
+<div class="card"><h3>Labor-Only</h3><p>Need help loading or unloading your own truck or pod? We've got you covered.</p></div>
+      </div>
+    </div>
+  </section>
+
+  
+<section id="pricing" class="section alt">
+  <div class="container">
+    <h2>Custom Quotes — Every Move Is Unique</h2>
+    <p>We don’t post flat prices because every move is different. Tell us about your home size, stairs/elevators, distance, big items, and timing — we’ll give you a fair, experience-based quote.</p>
+    <ul class="no-bullets">
+      <li>✅ Transparent, no‑surprise estimates</li>
+      <li>✅ Labor‑only help available</li>
+      <li>✅ <strong>Appliance delivery & installation included</strong> upon request</li>
+    </ul>
+    <div class="cta" style="margin-top:14px">
+      <a class="btn btn-primary" href="#quote">Request Your Quote</a>
+      <a class="btn btn-ghost" href="tel:+1XXXXXXXXXX">Call Now</a>
+    </div>
+  </div>
+</section>
+
+
+  <!--
+To add real customer reviews later, un-comment the block below and paste each review inside a <blockquote>...
+
+<section id="reviews" class="section">
+  <div class="container">
+    <h2>Customer Reviews</h2>
+    <!-- Example:
+    <blockquote>“Great experience — careful and fast.” <footer>— J. Smith</footer></blockquote>
+    -->
+  </div>
+</section>
+-->
+
+
+  <section id="quote" class="section alt">
+    <div class="container">
+      <h2>Request a Quote</h2>
+      <form id="quoteForm">
+        <label>Name<input name="name" required></label>
+        <label>Phone<input name="phone" inputmode="tel" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Move Details<textarea name="details" rows="4"></textarea></label>
+        <button class="btn btn-primary" type="submit">Send</button>
+      <p class="fine">Prefer Spanish? Escribe tu mensaje en español — <strong>¡hablamos español!</strong></p></form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <img class="logo" src="assets/logo.png" alt="" aria-hidden="true">
+      <p>© <span id="year"></span> Knight Movers DFW • Dallas–Fort Worth, TX</p>
+    </div>
+  </footer>
+</body>
+</html>
